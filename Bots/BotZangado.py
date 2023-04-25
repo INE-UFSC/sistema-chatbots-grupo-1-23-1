@@ -1,4 +1,4 @@
-from Bot import Bot
+from Bots.Bot import Bot
 
 class BotZangado(Bot):
     def __init__(self,nome):
@@ -12,27 +12,24 @@ class BotZangado(Bot):
     def nome(nome, self):
         self.__nome = nome
 
-    def apresentacao_zangado(self):
-        print("Cleiton - Mensagem de apresentação: EAE SEU PAU NO CU, EU SOU O CLEITON")
+    def apresentacao(self):
+        return("Cleiton - Mensagem de apresentação: EAE SEU PAU NO CU, EU SOU O CLEITON")
  
     def mostra_comandos(self):
-        print("1 - Bom dia")
-        print("2 - Qual o seu nome?")
-        print("3 - Quero um conselho")
-        print("4 - Adeus")
+        return("1 - Bom dia \n2 - Qual o seu nome? \n3 - Quero um conselho \n4 - Adeus")
     
-    def executa_comando_zangado(self,cmd):
+    def executa_comando(self,cmd):
         if cmd == "1":
-            print("Eu te respondo: BOM DIA PRA QUEM SEU MERDA?")
+            return("Eu te respondo: BOM DIA PRA QUEM SEU MERDA?")
         elif cmd == "2":
-            print(f"Eu te respondo: MEU NOME É {self.__nome}, SEU CABEÇA PIKA")
+            return(f"Eu te respondo: MEU NOME É {self.__nome}, SEU CABEÇA PIKA")
         elif cmd == "3":
-            print("Eu te respondo: NÃO ME ENCHE O SACO E DE OUTROS Q TA SUAVE")
+            return("Eu te respondo: NÃO ME ENCHE O SACO E DE OUTROS Q TA SUAVE")
         elif cmd == "4":
-            print("Eu te respondo: FALOU SEU MERDA, NÃO VOLTA MAIS TAMBÉM")
+            return("Eu te respondo: FALOU SEU MERDA, NÃO VOLTA MAIS TAMBÉM")
 
-    def boas_vindas_zangado(self):
-        print("Eu te respondo: Cleiton diz: PORRA NÃO ACREDITO Q TU ME ESCOLHEU")
+    def boas_vindas(self):
+        return("Eu te respondo: Cleiton diz: PORRA NÃO ACREDITO Q TU ME ESCOLHEU")
 
-    def despedida_zangado(self):
-        print("Eu te respondo: FALOU SEU MERDA, NÃO VOLTA MAIS TAMBÉM")
+    def despedida(self):
+        return("Eu te respondo: FALOU SEU MERDA, NÃO VOLTA MAIS TAMBÉM")

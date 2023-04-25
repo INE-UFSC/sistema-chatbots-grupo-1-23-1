@@ -1,5 +1,5 @@
-from ..Bots.BotZangado import BotZangado
-from ..Bots.BotFeliz import BotFeliz
+from Bots.BotZangado import BotZangado
+from Bots.BotFeliz import BotFeliz
 
 class SistemaChatBot:
     def __init__(self, nomeEmpresa, lista_bots):
