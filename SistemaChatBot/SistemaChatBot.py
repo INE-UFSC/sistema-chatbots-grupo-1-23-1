@@ -29,7 +29,7 @@ class SistemaChatBot:
         print(self.__bot.mostra_comandos())
 
     def le_envia_comando(self):
-        cmd = input("Digite o comando desejado(ao digitar 4,o programa fecha): ")
+        cmd = input("Digite o comando desejado(ao digitar 4 ,o programa fecha): ")
         if cmd  == '4':
            self.__rodando = False
         print(self.__bot.executa_comando(cmd))

@@ -28,7 +28,7 @@ class BotFeliz(Bot):
             return("Eu te respondo: ADEUS MEU REI, TENHA UM ÓTIMO DIA, ATÉ UMA PŔOXIMA!! XD")
 
     def boas_vindas(self):
-        return("Eu te respondo: Jorge diz: UHUUUUL, VOCÊ ME ESCOLHEU!!! XD")
+        return(f"Eu te respondo: {self.__nome} diz: UHUUUUL, VOCÊ ME ESCOLHEU!!! XD")
 
     def despedida(self):
         return(f"Eu te respondo: ADEUS MEU REI, TENHA UM ÓTIMO DIA, ATÉ UMA PŔOXIMA!! XD")
