@@ -1,12 +1,13 @@
 from Bots.BotZangado import BotZangado
 from Bots.BotFeliz import BotFeliz
+from Bots.BotTriste import BotTriste
 
 class SistemaChatBot:
     def __init__(self, nomeEmpresa, lista_bots):
         self.__empresa = nomeEmpresa
         self.__lista_bots = lista_bots
         self.__bot = None
-
+        self.__rodando = True
     def boas_vindas(self):
         print("Olá, este é o sistema de chatbots do Grupo 1 :D")
 
@@ -25,11 +26,13 @@ class SistemaChatBot:
             print("Opção inválida")
 
     def mostra_comandos_bot(self):
-        self.__bot.mostra_comandos()
+        print(self.__bot.mostra_comandos())
 
     def le_envia_comando(self):
-        cmd = input("Digite o comando desejado: ")
-        self.__bot.executa_comando(cmd)
+        cmd = input("Digite o comando desejado(ao digitar 4,o programa fecha): ")
+        if cmd  == '4':
+           self.__rodando = False
+        print(self.__bot.executa_comando(cmd))
 
     def inicio(self):
         self.boas_vindas()
@@ -39,7 +42,6 @@ class SistemaChatBot:
         while True:
             self.mostra_comandos_bot()
             self.le_envia_comando()
-            if self.__bot.termina_conversa:
+            if not self.__rodando:
                 break
 
-        self.__bot.despedida()

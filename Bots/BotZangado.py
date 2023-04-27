@@ -13,7 +13,7 @@ class BotZangado(Bot):
         self.__nome = nome
 
     def apresentacao(self):
-        return("Cleiton - Mensagem de apresentação: EAE SEU PAU NO CU, EU SOU O CLEITON")
+        return f"{self.__nome}- Mensagem de apresentação: EAE SEU PAU NO CU, EU SOU O {self.__nome}"
  
     def mostra_comandos(self):
         return("1 - Bom dia \n2 - Qual o seu nome? \n3 - Quero um conselho \n4 - Adeus")
