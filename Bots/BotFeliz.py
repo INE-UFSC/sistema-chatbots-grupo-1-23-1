@@ -15,8 +15,7 @@ class BotFeliz(Bot):
     def apresentacao(self):
         return(f"{self.__nome} - Mensagem de apresentação: Bom dia meu raio de sol XD")
  
-    def mostra_comandos(self):
-        return("1 - Bom dia \n2 - Qual o seu nome? \n3 - Quero um conselho \n4 - Adeus")
+
     def executa_comando(self,cmd):
         if cmd == "1":
             return("Eu te respondo: BOM DIA MEU CONSAGRADO!! XD")

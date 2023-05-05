@@ -16,10 +16,8 @@ class Bot(ABC):
     def nome(self, nome):
         pass
 
-    @abstractmethod
     def mostra_comandos(self):
-        pass
-
+        return("1 - Bom dia \n2 - Qual o seu nome? \n3 - Quero um conselho \n4 - Adeus")
     @abstractmethod
     def executa_comando(self, cmd):
         pass

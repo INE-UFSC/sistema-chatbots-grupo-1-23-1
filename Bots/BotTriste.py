@@ -15,8 +15,7 @@ class BotTriste(Bot):
     def apresentacao(self):
         return (f"{self.__nome}- Mensagem de apresentação: A cada dia a morte se aproxima...Bom dia.")
 
-    def mostra_comandos(self):
-        return ("1 - Bom dia \n2 - Qual o seu nome? \n3 - Quero um conselho \n4 - Adeus")
+
 
     def executa_comando(self, cmd):
         if cmd == "1":
